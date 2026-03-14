@@ -62,21 +62,20 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 USERS_DB: Dict[str, Dict] = {
     "admin": {
         "username": "admin",
-        "hashed_password": pwd_context.hash("admin123"),
+        "hashed_password": "$2b$12$rJjcFWgWP68PDKtZe3lrZOE.jS0yJr9K/ZQTdTCZ54GUeTFk62Zle",
         "role": "admin",
     },
     "peneliti": {
         "username": "peneliti",
-        "hashed_password": pwd_context.hash("peneliti123"),
+        "hashed_password": "$2b$12$bCzFVIM0Dqfo96yrZAVoH.h5/qJ94HSFwwC1XFeBWVwWmdL9YpET2",
         "role": "peneliti",
     },
     "viewer": {
         "username": "viewer",
-        "hashed_password": pwd_context.hash("viewer123"),
+        "hashed_password": "$2b$12$MdAEMQcX8MlIcjjiIEV9xOP2PvkTqK/KsmaENn8SiFtGj4De4D3FC",
         "role": "viewer",
     },
 }
-
 # ─────────────────────────────────────────────────────────────
 # Pydantic Models
 # ─────────────────────────────────────────────────────────────
