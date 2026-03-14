@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file:*)",
+      "Bash(python3:*)",
+      "Bash(cd:*)",
+      "Bash(unzip:*)",
+      "Bash(node:*)",
+      "Bash(find:*)",
+      "Bash(curl:*)",
+      "Bash(python -m json.tool)",
+      "Bash(python -m json.tool echo \"===\" curl -s http://localhost:8000/api/model/robustness)",
+      "Bash(taskkill:*)",
+      "Bash(netstat:*)",
+      "Bash(python:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}
