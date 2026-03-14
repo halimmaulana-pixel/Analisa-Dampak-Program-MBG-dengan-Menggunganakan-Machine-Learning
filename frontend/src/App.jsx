@@ -68,7 +68,9 @@ function AppRoutes() {
           <Layout>
             <Suspense fallback={<PageFallback />}>
               <Routes>
-                <Route path="/" element={<OverviewPage />} />
+                <Route path="/" element={
+  <ProtectedRoute><OverviewPage /></ProtectedRoute>
+} />
                 <Route path="/eda" element={
                   <ProtectedRoute><EDAPage /></ProtectedRoute>
                 } />
